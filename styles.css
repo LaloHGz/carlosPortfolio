@@ -1,0 +1,128 @@
+:root {
+    --bg-color: rgb(246,242,244);
+    --title-color: #414141;
+    --line-casa-cubo: rgb(241,158,75);
+}
+
+body{
+    margin: 4rem 6rem;
+    background-color: var(--bg-color);
+    font-family: 'Albert Sans', sans-serif;
+
+}
+
+#bar {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+}
+
+#logo {
+    height: 6rem;
+    grid-column: 1;
+}
+
+#name {
+    display: inline;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--title-color);
+    margin: 0;
+    grid-column: 2;
+}
+
+
+.subtitle {
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+#subtitle-casa-cubo {
+    background-color: var(--line-casa-cubo);
+}
+
+.img-render {
+    width: 100%;
+}
+
+#casa-cubo-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#casa-cubo-render1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#casa-cubo-render2 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+#casa-cubo-render3 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#casa-cubo-render4 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+#casa-jacaranda-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#casa-jacaranda-render1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+#casa-jacaranda-render2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#casa-jacaranda-render3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#casa-jacaranda-render4 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+#cassal-diseno-grid {
+    display: grid;
+    grid-template-columns: 1;
+    row-gap: 1rem;   
+}
+
+#fantasias-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1rem;
+}
+
+#fantasias-render1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#fantasias-render2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#fantasias-render3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#fantasias-render4 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
