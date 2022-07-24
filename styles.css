@@ -126,3 +126,27 @@ body{
     grid-column: 1 / 3;
     grid-row: 3;
 }
+
+#habitark-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+}
+
+#paso-del-humo-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+}
+
+#maquetas-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+}
+
+#sotavento-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+}
