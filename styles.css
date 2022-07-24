@@ -1,7 +1,14 @@
 :root {
     --bg-color: rgb(246,242,244);
     --title-color: #414141;
-    --line-casa-cubo: rgb(241,158,75);
+    --line-casa-cubo: #FFC800;
+    --line-casa-jacaranda: #540D6E;
+    --line-cassal-diseno: #F26157;
+    --line-fantasias: #E01A4F;
+    --line-habitark: #3777FF;
+    --line-maquetas: #6BD425;
+    --line-paso-del-humo: #2DE1C2;
+    --line-sotavento: #0071BC;
 }
 
 body{
@@ -41,6 +48,37 @@ body{
 #subtitle-casa-cubo {
     background-color: var(--line-casa-cubo);
 }
+
+#subtitle-casa-jacaranda {
+    background-color: var(--line-casa-jacaranda);
+}
+
+#subtitle-cassal-diseno {
+    background-color: var(--line-cassal-diseno);
+}
+
+#subtitle-fantasias {
+    background-color: var(--line-fantasias);
+}
+
+#subtitle-habitark {
+    background-color: var(--line-habitark);
+}
+
+#subtitle-maquetas {
+    background-color: var(--line-maquetas);
+}
+
+#subtitle-paso-del-humo {
+    background-color: var(--line-paso-del-humo);
+}
+
+#subtitle-sotavento {
+    background-color: var(--line-sotavento);
+}
+
+
+
 
 .img-render {
     width: 100%;
