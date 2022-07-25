@@ -1,6 +1,7 @@
 :root {
     --bg-color: rgb(246,242,244);
     --title-color: #414141;
+    --logo-color: rgb(241,158,75);
     --line-casa-cubo: #FFC800;
     --line-casa-jacaranda: #540D6E;
     --line-cassal-diseno: #F26157;
@@ -9,6 +10,10 @@
     --line-maquetas: #6BD425;
     --line-paso-del-humo: #2DE1C2;
     --line-sotavento: #0071BC;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -45,40 +50,37 @@ body{
     color: aliceblue;
 }
 
-#subtitle-casa-cubo {
+.subtitle-casa-cubo {
     background-color: var(--line-casa-cubo);
 }
 
-#subtitle-casa-jacaranda {
+.subtitle-casa-jacaranda {
     background-color: var(--line-casa-jacaranda);
 }
 
-#subtitle-cassal-diseno {
+.subtitle-cassal-diseno {
     background-color: var(--line-cassal-diseno);
 }
 
-#subtitle-fantasias {
+.subtitle-fantasias {
     background-color: var(--line-fantasias);
 }
 
-#subtitle-habitark {
+.subtitle-habitark {
     background-color: var(--line-habitark);
 }
 
-#subtitle-maquetas {
+.subtitle-maquetas {
     background-color: var(--line-maquetas);
 }
 
-#subtitle-paso-del-humo {
+.subtitle-paso-del-humo {
     background-color: var(--line-paso-del-humo);
 }
 
-#subtitle-sotavento {
+.subtitle-sotavento {
     background-color: var(--line-sotavento);
 }
-
-
-
 
 .img-render {
     width: 100%;
@@ -188,3 +190,67 @@ body{
     grid-template-columns: 100%;
     row-gap: 1rem;
 }
+
+footer {
+    text-align: center;
+}
+
+#footer-grid {
+    height: 0.5rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1;
+}
+
+#social-media {
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    color: var(--logo-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.fa-brands {
+  cursor: pointer;
+  
+}
+
+#footer-name {
+    margin-top: 0.7rem;
+}
+
+.text-footer {
+    font-size: 0.9rem;
+    display: inline;
+    color: var(--logo-color);
+}
+
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: var(--logo-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+  }

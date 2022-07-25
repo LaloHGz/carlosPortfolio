@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <title>ARQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo-carlos.ico" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo-carlos.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2a0252487a.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
     <section id="bar">
@@ -15,94 +21,141 @@
     </section>
 
     <section id="casa-cubo">
-        <h2 class="subtitle" id="subtitle-casa-cubo">CASA CUBO</h2>
+        <h2 class="subtitle subtitle-casa-cubo">CASA CUBO</h2>
         <div id="casa-cubo-grid">
-            <img class="img-render" id="casa-cubo-render1" src="CasaCubo/CasaCubo_FachadaColor.png" alt="casa-cubo-render1">
-            <img class="img-render" id="casa-cubo-render2" src="CasaCubo/CasaCubo_PAlta_Color.jpg" alt="casa-cubo-render2">
-            <img class="img-render" id="casa-cubo-render3" src="CasaCubo/CasaCubo_PAlta_Negro.jpg" alt="casa-cubo-render3">
-            <img class="img-render" id="casa-cubo-render4" src="CasaCubo/CasaCubo_PBaja_Color.jpg" alt="casa-cubo-render4">
+            <img data-aos="fade-up" class="img-render" id="casa-cubo-render1" src="CasaCubo/CasaCubo_FachadaColor.png" alt="casa-cubo-render1">
+            <img class="img-render reveal" id="casa-cubo-render2" src="CasaCubo/CasaCubo_PAlta_Color.jpg" alt="casa-cubo-render2">
+            <img class="img-render reveal" id="casa-cubo-render3" src="CasaCubo/CasaCubo_PAlta_Negro.jpg" alt="casa-cubo-render3">
+            <img class="img-render reveal" id="casa-cubo-render4" src="CasaCubo/CasaCubo_PBaja_Color.jpg" alt="casa-cubo-render4">
         </div>
     </section>
 
     <section id="casa-jacaranda">
-        <h2 class="subtitle" id="subtitle-casa-jacaranda">CASA JACARANDA</h2>
+        <h2 class="subtitle subtitle-casa-jacaranda">CASA JACARANDA</h2>
         <div id="casa-jacaranda-grid">
-            <img class="img-render" id="casa-jacaranda-render1" src="CasaJacaranda/Plano_CasaJacaranda_Color.jpg" alt="casa-jacaranda-render1">
-            <img class="img-render" id="casa-jacaranda-render2" src="CasaJacaranda/CasaJacarandaFachadaColor1.png" alt="casa-jacaranda-render2">
-            <img class="img-render" id="casa-jacaranda-render3" src="CasaJacaranda/JFachada_Render.png" alt="casa-jacaranda-render3">
-            <img class="img-render" id="casa-jacaranda-render4" src="CasaJacaranda/CasaJacarandaAtras_2.png" alt="casa-jacaranda-render4">
+            <img class="img-render reveal" id="casa-jacaranda-render1" src="CasaJacaranda/Plano_CasaJacaranda_Color.jpg" alt="casa-jacaranda-render1">
+            <img class="img-render reveal" id="casa-jacaranda-render2" src="CasaJacaranda/CasaJacarandaFachadaColor1.png" alt="casa-jacaranda-render2">
+            <img class="img-render reveal" id="casa-jacaranda-render3" src="CasaJacaranda/JFachada_Render.png" alt="casa-jacaranda-render3">
+            <img class="img-render reveal" id="casa-jacaranda-render4" src="CasaJacaranda/CasaJacarandaAtras_2.png" alt="casa-jacaranda-render4">
         </div>
     </section>
 
     <section id="cassal-diseno">
-        <h2 class="subtitle" id="subtitle-cassal-diseno">CASSAL DISEÑO</h2>
+        <h2 class="subtitle subtitle-cassal-diseno">CASSAL DISEÑO</h2>
         <div id="cassal-diseno-grid">
-            <img id="cassal-diseno-render1" src="CassalDiseno/CasaLagunaAguada_Bano08F.png" alt="cassal-diseno-render2" class="img-render">
-            <img id="cassal-diseno-render2" src="CassalDiseno/BanoGRAL_5F.png" alt="cassal-diseno-render3" class="img-render">
-            <img id="cassal-diseno-render3" src="CassalDiseno/BanoAlexandra_A04F.png" alt="cassal-diseno-render4" class="img-render">
-            <img id="cassal-diseno-render4" src="CassalDiseno/5CASAMONTIEL_Cocina.png" alt="cassal-diseno-render5" class="img-render">
-            <img id="cassal-diseno-render5" src="CassalDiseno/3BarraCocina_Render.png" alt="cassal-diseno-render6" class="img-render">
-            <img id="cassal-diseno-render6" src="CassalDiseno/Pergolado_22abril_2.png" alt="cassal-diseno-render7" class="img-render">
-            <img id="cassal-diseno-render7" src="CassalDiseno/Pergolado_22abril.png" alt="cassal-diseno-render8" class="img-render">
-            <img id="cassal-diseno-render8" src="CassalDiseno/PLAZAA10.png" alt="cassal-diseno-render9" class="img-render">
+            <img id="cassal-diseno-render1" src="CassalDiseno/CasaLagunaAguada_Bano08F.png" alt="cassal-diseno-render2" class="img-render reveal">
+            <img id="cassal-diseno-render2" src="CassalDiseno/BanoGRAL_5F.png" alt="cassal-diseno-render3" class="img-render reveal">
+            <img id="cassal-diseno-render3" src="CassalDiseno/BanoAlexandra_A04F.png" alt="cassal-diseno-render4" class="img-render reveal">
+            <img id="cassal-diseno-render4" src="CassalDiseno/5CASAMONTIEL_Cocina.png" alt="cassal-diseno-render5" class="img-render reveal">
+            <img id="cassal-diseno-render5" src="CassalDiseno/3BarraCocina_Render.png" alt="cassal-diseno-render6" class="img-render reveal">
+            <img id="cassal-diseno-render6" src="CassalDiseno/Pergolado_22abril_2.png" alt="cassal-diseno-render7" class="img-render reveal">
+            <img id="cassal-diseno-render7" src="CassalDiseno/Pergolado_22abril.png" alt="cassal-diseno-render8" class="img-render reveal">
+            <img id="cassal-diseno-render8" src="CassalDiseno/PLAZAA10.png" alt="cassal-diseno-render9" class="img-render reveal">
         </div>
     </section>
 
     <section id="fantasias">
-        <h2 class="subtitle" id="subtitle-fantasias">FANTASÍAS</h2>
+        <h2 class="subtitle" class="subtitle-fantasias">FANTASÍAS</h2>
         <div id="fantasias-grid">
-            <img class="img-render" src="Fantasias/VistaAcuarelada.png" alt="fantasias-render1" id="fantasias-render1">
-            <img class="img-render" src="Fantasias/2FantasiaRender_Final.png" alt="fantasias-render2" id="fantasias-render2">
-            <img class="img-render" src="Fantasias/3Fantasia_Render.png" alt="fantasias-render3" id="fantasias-render3">
-            <img class="img-render" src="Fantasias/IGNIS_Render.png" alt="fantasias-render4" id="fantasias-render4">
-            <img class="img-render" src="Fantasias/4Fantasia_Render.png" alt="fantasias-render5" id="fantasias-render5">
-            <img class="img-render" src="Fantasias/FantasiaRender3.png" alt="fantasias-render6" id="fantasias-render6">
-            <img class="img-render" src="Fantasias/va.png" alt="fantasias-render7" id="fantasias-render7">
-            <img class="img-render" src="Fantasias/5Fantasia_1Render.png" alt="fantasias-render8" id="fantasias-render8">
+            <img class="img-render reveal" src="Fantasias/VistaAcuarelada.png" alt="fantasias-render1" id="fantasias-render1">
+            <img class="img-render reveal" src="Fantasias/2FantasiaRender_Final.png" alt="fantasias-render2" id="fantasias-render2">
+            <img class="img-render reveal" src="Fantasias/3Fantasia_Render.png" alt="fantasias-render3" id="fantasias-render3">
+            <img class="img-render reveal" src="Fantasias/IGNIS_Render.png" alt="fantasias-render4" id="fantasias-render4">
+            <img class="img-render reveal" src="Fantasias/4Fantasia_Render.png" alt="fantasias-render5" id="fantasias-render5">
+            <img class="img-render reveal" src="Fantasias/FantasiaRender3.png" alt="fantasias-render6" id="fantasias-render6">
+            <img class="img-render reveal" src="Fantasias/va.png" alt="fantasias-render7" id="fantasias-render7">
+            <img class="img-render reveal" src="Fantasias/5Fantasia_1Render.png" alt="fantasias-render8" id="fantasias-render8">
         </div>
     </section>
 
     <section id="habitark">
-        <h2 class="subtitle" id="subtitle-habitark">HABITARK</h2>
+        <h2 class="subtitle subtitle-habitark">HABITARK</h2>
         <div id="habitark-grid">
-            <img id="habitark-render1" src="Habitark/Fachada01.png" alt="habitark-render1" class="img-render">
-            <img id="habitark-render2" src="Habitark/Fachada02.png" alt="habitark-render2" class="img-render">
-            <img id="habitark-render3" src="Habitark/R4.png" alt="habitark-render3" class="img-render">
-            <img id="habitark-render4" src="Habitark/Image6.png" alt="habitark-render4" class="img-render">
+            <img id="habitark-render1" src="Habitark/Fachada01.png" alt="habitark-render1" class="img-render reveal">
+            <img id="habitark-render2" src="Habitark/Fachada02.png" alt="habitark-render2" class="img-render reveal">
+            <img id="habitark-render3" src="Habitark/R4.png" alt="habitark-render3" class="img-render reveal">
+            <img id="habitark-render4" src="Habitark/Image6.png" alt="habitark-render4" class="img-render reveal">
         </div>
     </section>
 
     <section id="maquetas">
-        <h2 class="subtitle" id="subtitle-maquetas">MAQUETAS</h2>
+        <h2 class="subtitle subtitle-maquetas">MAQUETAS</h2>
         <div id="maquetas-grid">
-            <img src="Maquetas/CasaCitrohanMaqueta_CG.png" alt="maquetas-render1" class="img-render">
-            <img src="Maquetas/CasaCubos_Maqueta.png" alt="maquetas-render2" class="img-render">
+            <img src="Maquetas/CasaCitrohanMaqueta_CG.png" alt="maquetas-render1" class="img-render reveal">
+            <img src="Maquetas/CasaCubos_Maqueta.png" alt="maquetas-render2" class="img-render reveal">
         </div>
     </section>
 
     <section id="paso-del-humo">
-        <h2 class="subtitle" id="subtitle-paso-del-humo">PASO DEL HUMO</h2>
+        <h2 class="subtitle subtitle-paso-del-humo">PASO DEL HUMO</h2>
         <div id="paso-del-humo-grid">
-            <img id="paso-del-humo-render1" src="PasodelHumo/Perspectiva2%20PDH.png" alt="paso-del-humo-render1" class="img-render">
-            <img id="paso-del-humo-render2" src="PasodelHumo/R11_F.png" alt="paso-del-humo-render2" class="img-render">
-            <img id="paso-del-humo-render3" src="PasodelHumo/R5_F.png" alt="paso-del-humo-render3" class="img-render">
-            <img id="paso-del-humo-render4" src="PasodelHumo/R6_F.png" alt="paso-del-humo-render4" class="img-render">
-            <img id="paso-del-humo-render5" src="PasodelHumo/R7_F.png" alt="paso-del-humo-render5" class="img-render">
-            <img id="paso-del-humo-render6" src="PasodelHumo/R10_F.png" alt="paso-del-humo-render6" class="img-render">
+            <img id="paso-del-humo-render1" src="PasodelHumo/Perspectiva2%20PDH.png" alt="paso-del-humo-render1" class="img-render reveal">
+            <img id="paso-del-humo-render2" src="PasodelHumo/R11_F.png" alt="paso-del-humo-render2" class="img-render reveal">
+            <img id="paso-del-humo-render3" src="PasodelHumo/R5_F.png" alt="paso-del-humo-render3" class="img-render reveal">
+            <img id="paso-del-humo-render4" src="PasodelHumo/R6_F.png" alt="paso-del-humo-render4" class="img-render reveal">
+            <img id="paso-del-humo-render5" src="PasodelHumo/R7_F.png" alt="paso-del-humo-render5" class="img-render reveal">
+            <img id="paso-del-humo-render6" src="PasodelHumo/R10_F.png" alt="paso-del-humo-render6" class="img-render reveal">
         </div>
     </section>
 
     <section id="sotavento">
-        <h2 class="subtitle" id="subtitle-sotavento">SOTAVENTO</h2>
+        <h2 class="subtitle subtitle-sotavento">SOTAVENTO</h2>
         <div id="sotavento-grid">
-            <img id="sotavento-render1" src="Sotavento/Alberca2.png" alt="sotavento-render1" class="img-render">
-            <img id="sotavento-render2" src="Sotavento/Bungalow_Render.png" alt="sotavento-render2" class="img-render">
-            <img id="sotavento-render3" src="Sotavento/Image1_000.png" alt="sotavento-render3" class="img-render">
-            <img id="sotavento-render4" src="Sotavento/Image2_000.png" alt="sotavento-render4" class="img-render">
-            <img id="sotavento-render5" src="Sotavento/IsometricoAldea2.png" alt="sotavento-render5" class="img-render">
-            <img id="sotavento-render6" src="Sotavento/IsometricoAldea_Recamara.png" alt="sotavento-render6" class="img-render">
+            <img id="sotavento-render1" src="Sotavento/Alberca2.png" alt="sotavento-render1" class="img-render reveal">
+            <img id="sotavento-render2" src="Sotavento/Bungalow_Render.png" alt="sotavento-render2" class="img-render reveal">
+            <img id="sotavento-render3" src="Sotavento/Image1_000.png" alt="sotavento-render3" class="img-render reveal">
+            <img id="sotavento-render4" src="Sotavento/Image2_000.png" alt="sotavento-render4" class="img-render reveal">
+            <img id="sotavento-render5" src="Sotavento/IsometricoAldea2.png" alt="sotavento-render5" class="img-render reveal">
+            <img id="sotavento-render6" src="Sotavento/IsometricoAldea_Recamara.png" alt="sotavento-render6" class="img-render reveal">
         </div>
     </section>
 
 </body>
+<footer>
+    <div id="footer-grid">
+        <i class="img-render subtitle-casa-cubo"></i>
+        <i class="img-render subtitle-casa-jacaranda"></i>
+        <i class="img-render subtitle-cassal-diseno"></i>
+        <i class="img-render subtitle-fantasias"></i>
+        <i class="img-render subtitle-habitark"></i>
+        <i class="img-render subtitle-maquetas"></i>
+        <i class="img-render subtitle-paso-del-humo"></i>
+        <i class="img-render subtitle-sotavento"></i>
+    </div>
+    <div id="social-media">
+        <a href="">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <div id="footer-name">
+        <p class="text-footer">C&nbsp;A&nbsp;R&nbsp;L&nbsp;O&nbsp;S <br> G&nbsp;Ó&nbsp;M&nbsp;E&nbsp;Z <br> 2&nbsp;0&nbsp;2&nbsp;2</p>
+    </div>
+
+    <button id="topBtn"><i class="fas fa-arrow-up-long"></i></button>
+    <script type="text/javascript" src="goTopButton.js"></script>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            
+            for(var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                
+                if(revealtop < windowHeight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }else {
+                    reveals[i].classList.remove('active');
+                }
+            }    
+        }
+    </script>
+
+</footer>
 </html>
