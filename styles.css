@@ -1,7 +1,7 @@
 :root {
-    --bg-color: rgb(246,242,244);
+    --bg-color: rgb(246, 242, 244);
     --title-color: #414141;
-    --logo-color: rgb(241,158,75);
+    --logo-color: rgb(241, 158, 75);
     --line-casa-cubo: #FFC800;
     --line-casa-jacaranda: #540D6E;
     --line-cassal-diseno: #F26157;
@@ -16,21 +16,20 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 4rem 6rem;
     background-color: var(--bg-color);
     font-family: 'Albert Sans', sans-serif;
-
 }
 
 #bar {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 80% 10%;
     align-items: center;
 }
 
 #logo {
-    height: 6rem;
+    width: 100%;
     grid-column: 1;
 }
 
@@ -40,9 +39,16 @@ body{
     font-size: 3rem;
     color: var(--title-color);
     margin: 0;
+    padding-left: 1rem;
     grid-column: 2;
 }
 
+#social-media {
+    font-size: 1.7rem;
+    margin-top: 1.6rem;
+    color: var(--logo-color);
+    text-align: end;
+}
 
 .subtitle {
     padding-left: 1.5rem;
@@ -100,6 +106,7 @@ body{
     grid-column: 1 / 2;
     grid-row: 2;
 }
+
 #casa-cubo-render3 {
     grid-column: 2 / 3;
     grid-row: 2;
@@ -138,7 +145,7 @@ body{
 #cassal-diseno-grid {
     display: grid;
     grid-template-columns: 1;
-    row-gap: 1rem;   
+    row-gap: 1rem;
 }
 
 #fantasias-grid {
@@ -203,20 +210,13 @@ footer {
     grid-template-rows: 1;
 }
 
-#social-media {
-    font-size: 2rem;
-    margin-top: 1.6rem;
-    color: var(--logo-color);
-}
-
 a {
     text-decoration: none;
     color: var(--logo-color);
 }
 
 .fa-brands {
-  cursor: pointer;
-  
+    cursor: pointer;
 }
 
 #footer-name {
@@ -229,11 +229,11 @@ a {
     color: var(--logo-color);
 }
 
-#topBtn{
+#topBtn {
     position: fixed;
     bottom: 40px;
     right: 20px;
-    font-size: 22px;
+    font-size: 1.5rem;
     width: 50px;
     height: 50px;
     background: var(--logo-color);
@@ -241,16 +241,64 @@ a {
     border: none;
     cursor: pointer;
     display: none;
-  }
+}
 
-  .reveal {
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 2s ease;
-  }
-  
-  .reveal.active {
+    transition: all 1s ease;
+}
+
+.reveal.active {
     transform: translateY(0px);
     opacity: 1;
-  }
+}
+
+#flag {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+i {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 3rem 3rem;
+    }
+
+    #bar {
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+    }
+
+    #name {
+        font-size: 4rem;
+    }
+
+    #social-media {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 4rem;
+    }
+
+    #topBtn {
+        font-size: 3rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #footer-grid {
+        height: 2rem;
+    }
+    
+    #flag {
+        font-size: 4rem;
+    }
+
+}
